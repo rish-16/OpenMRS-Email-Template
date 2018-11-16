@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Thank you!</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    </head>
+
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            font-family: Fredoka One;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #D1E3F2;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        img {
+            -webkit-user-drag: none;
+            user-select: none;
+        }
+
+        #container {
+            width: 400px;
+            height: 500px;
+            background: url('images/bg.png') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+
+        #container #header {
+            width: 100%;
+            height: 20%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #container #header img {
+            width: 92%;
+            margin: 0 auto;
+        }
+
+        #container #main {
+            position: relative;
+            width: 100%;
+            height: 80%;
+            text-align: center;
+        }
+
+        #container #main #recip {
+            font-size: 19px;
+            padding: 20px 0;
+            color: white;
+        }
+
+        #container #main #main-text {
+            line-height: 30px;
+            padding: 0 15px 0 15px;
+            font-family: Avenir Next;
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+        }
+
+        #container #main #main-text span {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 0;
+            color: white;
+        }
+
+        #container #main #main-text #creds {
+            color: #D1E3F2;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        #container #main #main-text #creds a {
+            color: #D1E3F2;
+            height: 20px;
+            border-bottom: 1px solid #D1E3F2;
+        }
+
+        #container #social {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 20px auto;
+        }
+
+        #container #social i {
+            font-size: 18px;
+            color: white;
+            padding: 0 15px;
+        }
+
+        #container #social i:hover {
+            opacity: 0.5;
+            cursor: pointer;
+            transition: 0.5s;
+        }        
+    </style>
+
+    <body>
+
+        <div id="container">
+            <div id="header">
+                <img src="images/top.png">
+            </div>
+            <div id="main">
+                <p id="recip">Dear Greg,</p>
+                <p id="main-text">
+                    Congrats on completing <b>6</b> tasks this season!
+                    <br>
+                    It gives us immense joy to have seen you grow your software development skills and we can confidently say you've done an amazing job!
+                    <br>
+                    We hope we've been insightful mentors and look forward to working with you again.
+                    <br>
+                    <br>
+                    <span>Keep hacking!</span>
+                    <br>
+                    <span id="creds">Your friends at <a href="" target="">OpenMRS</a></span>
+                </p>
+                <div id="social">
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
