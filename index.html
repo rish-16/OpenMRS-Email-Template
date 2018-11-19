@@ -39,7 +39,7 @@
         }
 
         #container {
-            width: 400px;
+            width: 550px;
             height: 550px;
             background: url('images/bg.png') no-repeat center center fixed; 
             -webkit-background-size: cover;
@@ -58,13 +58,18 @@
             height: 22%;
             text-align: center;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-evenly;
         }
 
-        #container #header img {
-            width: 85%;
-            margin: 0 auto;
+        #container #header a {
+            margin: auto 0;
+            height: 75%;
+        }
+
+        #container #header a img {
+            height: 100%;
+            margin: auto 0;
         }
 
         #container #main {
@@ -81,8 +86,9 @@
         }
 
         #container #main #main-text {
+            width: 75%;
+            margin: 0 auto;
             line-height: 30px;
-            padding: 0 20px 0 20px;
             font-family: Avenir Next;
             font-weight: 600;
             color: rgb(255, 255, 255);
@@ -132,12 +138,14 @@
 
         <div id="container">
             <div id="header">
-                <img src="images/top.png">
+                <a href="http://openmrs.org"><img src="images/omrs.png" alt="image1"></a>
+                <a href="https://summerofcode.withgoogle.com/archive/"><img src="images/gsoc.png" alt="image2"></a>
             </div>
             <div id="main">
                 <p id="recip">Dear Greg,</p>
                 <p id="main-text">
                     Congrats on successfully completing this year's
+                    <br>
                     <b>Google Summer of Code</b>!
                     <br>
                     It gives us immense joy to have seen you grow your software development skills and we can confidently say you've done some amazing work thus far.
@@ -147,7 +155,7 @@
                     <br>
                     <span>Great job, Greg! Keep it up!</span>
                     <br>
-                    <span id="creds">Your friends at <a href="http://openmrs.org" target="blank_">OpenMRS</a></span>
+                    <span id="creds">The <a href="http://openmrs.org" target="blank_">OpenMRS</a> community</span>
                 </p>
                 <div id="social">
                     <i class="fab fa-google-plus-g"></i>
